@@ -3,8 +3,12 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#">WebSiteName</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="#">Home</a></li>
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to "Sign Up", new_user_registration_path %></li>
+      <li><%= link_to "Sign In", new_user_session_path %></li>
+      <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+    </ul>
+      <ul class="nav navbar-nav">
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
           <span class="caret"></span></a>
