@@ -185,7 +185,7 @@ DEPENDENCIES
   devise (~> 4.4, >= 4.4.3)
   jbuilder (~> 2.0)
   jquery-rails
-  pg
+  pg (~> 1.0)
   rails (= 4.2.10)
   rails_12factor (~> 0.0.3)
   sass-rails (~> 5.0)
