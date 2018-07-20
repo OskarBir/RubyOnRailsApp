@@ -6,9 +6,14 @@
 </p>
 
 <p>
-  <strong>Result date:</strong>
-  <%= @result.result_date %>
+  <strong>User:</strong>
+  <%= User.find(@result.user_id).inspect %>
 </p>
 
-<%= link_to 'Edit', edit_result_path(@result) %> |
-<%= link_to 'Back', results_path %>
+<p>
+  <strong>Word:</strong>
+  <%= Word.find(@result.word_id).inspect %>
+</p>
+
+<%= link_to 'Edit', edit_result_path(@result), class: 'btn btn-warning' %>
+<%= link_to 'Back', results_path, class: 'btn btn-danger' %>

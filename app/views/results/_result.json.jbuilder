@@ -1,2 +1,2 @@
-json.extract! result, :id, :result, :result_date, :created_at, :updated_at
+json.extract! result, :id, :result, :created_at, :updated_at
 json.url result_url(result, format: :json)

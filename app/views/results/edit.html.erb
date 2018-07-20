@@ -1,6 +1,7 @@
 <h1>Editing Result</h1>
 
 <%= render 'form' %>
+<br/>
 
-<%= link_to 'Show', @result %> |
-<%= link_to 'Back', results_path %>
+<%= link_to 'Show', @result, class: 'btn btn-warning' %>
+<%= link_to 'Back', results_path, class: 'btn btn-danger' %>

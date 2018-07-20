@@ -5,5 +5,10 @@
   <%= @subcategory.name %>
 </p>
 
-<%= link_to 'Edit', edit_subcategory_path(@subcategory) %> |
-<%= link_to 'Back', subcategories_path %>
+<p>
+  <strong>Category:</strong>
+  <%=  Category.find(@subcategory.category_id).name %>
+</p>
+
+<%= link_to 'Edit', edit_subcategory_path(@subcategory), class: 'btn btn-warning' %>
+<%= link_to 'Back', subcategories_path, class: 'btn btn-danger' %>
