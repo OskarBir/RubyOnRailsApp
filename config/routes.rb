@@ -13,6 +13,18 @@ Rails.application.routes.draw do
 
   get 'pages/subcategory_list'
 
+  get 'pages/word_list'
+
+  get 'pages/word'
+
+  get 'pages/test'
+
+  get 'pages/exam'
+
+  get 'pages/algorithm'
+
+  get 'pages/score'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

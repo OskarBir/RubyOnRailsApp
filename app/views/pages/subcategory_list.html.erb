@@ -1,1 +1,7 @@
 <h1>Choose a subcategory</h1>
+
+<% @subcategories.each do |subcategory| %>
+  <br/>
+  <%= link_to "#{subcategory.name}", pages_word_list_path(id: subcategory.id), class: 'btn btn-warning btn-block',style: 'width:550px; height: 50px;'%>
+  <br/>
+<% end %>

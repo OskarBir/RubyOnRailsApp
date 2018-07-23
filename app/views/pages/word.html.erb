@@ -1,0 +1,9 @@
+<% @sets.each do |set| %>
+  <h1> You picked <%= set.name%></h1>
+  Here's a list of words from this set: <br/>
+
+<%= link_to "test", pages_test_path(id: set.id), class: 'btn btn-warning btn-block',style: 'width:550px; height: 50px;'%>
+<%= link_to "exam", pages_exam_path(id: set.id), class: 'btn btn-warning btn-block',style: 'width:550px; height: 50px;'%>
+
+<% end %>
+

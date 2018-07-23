@@ -6,7 +6,6 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Words</th>
       <th>Subcategory</th>
       <th>Created At</th>
       <th>Updated At</th>
@@ -18,7 +17,6 @@
     <% @words.each do |word| %>
       <tr>
         <td><%= word.name %></td>
-        <td><%= word.words.length < 30 ? word.words[0..30] : word.words[0..30] + " [more...]" %></td>
         <td><%= Subcategory.find(word.subcategory_id).name %></td>
         <td><%= word.created_at%></td>
         <td><%= word.updated_at %></td>
