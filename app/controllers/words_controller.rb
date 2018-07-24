@@ -71,15 +71,6 @@ class WordsController < ApplicationController
     def word_params
       params.require(:word).permit(:name,
                                    :subcategory_id,
-                                   :word1pl,
-                                   :word1en,
-                                   :word2pl,
-                                   :word2en,
-                                   :word3pl,
-                                   :word3en,
-                                   :word4pl,
-                                   :word4en,
-                                   :word5pl,
-                                   :word5en)
+                                   :content)
     end
 end

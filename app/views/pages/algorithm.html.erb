@@ -1,13 +1,15 @@
-<%= form_for :anything, url: "score", :html => { :method => 'GET' } do |form| %>
-    <%= form.text_field :a %><br/>
-  <br/>
-    <%= form.text_field :b %><br/>
-  <br/>
-    <%= form.text_field :c %><br/>
-  <br/>
-    <%= form.text_field :d %><br/>
-  <br/>
-    <%= form.text_field :e %><br/>
-  <br/>
+<%= form_for :answer, url: pages_score_path(id: params[:id]), :html => { :method => 'GET' } do |form| %>
+    <% i=0%>
+    <% while i < @words_hash.keys.length do %>
+      <%= "word " + @words_hash.keys[0+i] + " means"%>
+    <%= form.text_field @words_hash.values[0+i].strip.to_sym %><br/>
+    <br/>
+    <% i += 1%>
+    <% end %>
+    <%= form.hidden_field :id, value: params[:id] %>
+    <%= form.hidden_field :alg, value: params[:alg] %>
+    <%= form.hidden_field :lang, value: params[:lang] %>
   <%= form.submit  %>
 <% end %>
+
+

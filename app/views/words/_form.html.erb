@@ -4,16 +4,7 @@
 
   <div class="form-inputs">
     <%= f.input :name %>
-    <%= f.input :word1pl %>
-    <%= f.input :word1en %>
-    <%= f.input :word2pl %>
-    <%= f.input :word2en %>
-    <%= f.input :word3pl %>
-    <%= f.input :word3en %>
-    <%= f.input :word4pl %>
-    <%= f.input :word4en %>
-    <%= f.input :word5pl %>
-    <%= f.input :word5en %>
+    <%= f.input :content %>
     <strong>Subcategory: </strong><br>
     <%= f.collection_select :subcategory_id, Subcategory.order(:name),:id,:name, {}, {:class=>'form-control'} %>
     <br/>
