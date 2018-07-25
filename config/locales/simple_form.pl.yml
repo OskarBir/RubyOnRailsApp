@@ -1,4 +1,4 @@
-en:
+pl:
   simple_form:
     "yes": 'Yes'
     "no": 'No'
@@ -6,5 +6,5 @@ en:
       text: 'required'
       mark: '*'
     error_notification:
-      default_message: "Please review the problems below:"
-      minimum_characters: "characters minimum"
+      default_message: "Sprawdź poprawność poniższych pól"
+      minimum_characters: "znaków conajmniej"

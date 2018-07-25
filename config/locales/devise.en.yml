@@ -1,7 +1,18 @@
-# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
-
 en:
   devise:
+    log_in:
+      log_in: "Log in"
+      email: "Email"
+      password: "Password"
+      remember_me: "Remember me"
+    sign_up:
+      sign_up: "Sign Up"
+      username: "Username"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+    links:
+      forgot_password: "Forgot your password?"
     confirmations:
       confirmed: "Your email address has been successfully confirmed."
       send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."

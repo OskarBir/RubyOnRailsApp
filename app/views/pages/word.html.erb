@@ -1,11 +1,11 @@
 <% @words.each do |set| %>
   <div class="center">
-    <h1 style="text-align:center;" > You picked <%= set.name%></h1>
+    <h1 style="text-align:center;" ><%= t('choose.word') + set.name%></h1>
     <table class = "table table-hover">
       <thead>
       <tr>
-        <th>Polski</th>
-        <th>Eng</th>
+        <th><%= t('polish') %></th>
+        <th><%= t('english') %></th>
       <tr>
       </thead>
 
@@ -21,9 +21,9 @@
       </tbody>
     </table>
 
-    <%= link_to "test", pages_test_path(id: set.id), class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;'%><br/>
+    <%= link_to "Test", pages_test_path(id: set.id), class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;'%><br/>
     <br/>
-    <%= link_to "exam", pages_exam_path(id: set.id), class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;'%>
+    <%= link_to t('exam'), pages_exam_path(id: set.id), class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;'%>
   </div>
 <% end %>
 

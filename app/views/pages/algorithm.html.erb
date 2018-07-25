@@ -1,15 +1,16 @@
-<%= form_for :answer, url: pages_score_path(id: params[:id]), :html => { :method => 'GET' } do |form| %>
+<%= form_for :answer, url: pages_score_path, method: :get  do |form| %>
     <% i=0%>
     <% while i < @words_hash.keys.length do %>
-      <%= "word " + @words_hash.keys[0+i] + " means"%>
-    <%= form.text_field @words_hash.values[0+i].strip.to_sym %><br/>
+      <%= t('enter') + @words_hash.keys[0+i] + (params[:lang] == 1 ? t('in_polish') : t('in_english'))%>
+    <%= form.text_field @words_hash.values[0+i].strip.to_sym, required: true %><br/>
     <br/>
     <% i += 1%>
     <% end %>
     <%= form.hidden_field :id, value: params[:id] %>
     <%= form.hidden_field :alg, value: params[:alg] %>
     <%= form.hidden_field :lang, value: params[:lang] %>
-  <%= form.submit  %>
+  <%= form.submit value: t('submit') %>
 <% end %>
+
 
 

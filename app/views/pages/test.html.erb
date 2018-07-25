@@ -1,2 +1,8 @@
-<%= link_to "pol -> eng", pages_algorithm_path(id: params[:id], lang: 1, alg: 0), class: 'btn btn-warning btn-block',style: 'width:550px; height: 50px;'%>
-<%= link_to "eng -> pol", pages_algorithm_path(id: params[:id], lang: 0, alg: 0), class: 'btn btn-warning btn-block',style: 'width:550px; height: 50px;'%>
+<h1 style="text-align:center;"><%= t('choose.language') %></h1>
+<div class="center">
+    <br/>
+  <%= link_to t('english') + " --> " + t('polish'), pages_algorithm_path(id: params[:id], lang: 1, alg: 0), class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;' %><br/>
+  <br/>
+  <%= link_to t('polish') + " --> " + t('english'), pages_algorithm_path(id: params[:id], lang: 0, alg: 0), class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;' %>
+    <br/>
+</div>

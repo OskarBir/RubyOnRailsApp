@@ -1,30 +1,41 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <%= link_to "Words Learning System", root_path, class: 'navbar-brand' %>
+      <%= link_to t('app_name'), root_path, class: 'navbar-brand' %>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <% if current_user %>
+      <% if current_user ? current_user.admin : current_user%>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">CRUD
             <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><%= link_to "Category", categories_path %></li>
-            <li><%= link_to "Subcategory", subcategories_path %></li>
-            <li><%= link_to "Words", words_path %></li>
-            <li><%= link_to "Results", results_path %></li>
+            <li><%= link_to t('admin.category'), categories_path %></li>
+            <li><%= link_to t('admin.subcategory'), subcategories_path %></li>
+            <li><%= link_to t('admin.word'), words_path %></li>
+            <li><%= link_to t('admin.result'), results_path %></li>
           </ul>
         </li>
-        <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
-        <li><%= link_to "Edit My Profile", edit_user_registration_path %></li>
+      <% end%>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <% if current_user %>
+        <li><%= link_to t('log_out'), destroy_user_session_path, method: :delete %></li>
+        <li><%= link_to t('profile_edit'), edit_user_registration_path %></li>
       <% else %>
-        <li><%= link_to "Sign Up", new_user_registration_path %></li>
-        <li><%= link_to "Sign In", new_user_session_path %></li>
+        <li><%= link_to t('sign_up'), new_user_registration_path %></li>
+        <li><%= link_to t('sign_in'), new_user_session_path %></li>
       <% end%>
     </ul>
       <ul class="nav navbar-nav">
-        <li><%= link_to "Contact", pages_contact_path %></li>
-        <li><%= link_to "About", pages_about_path %></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t('choose.language') %>
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to t('english'), set_language_english_path %></li>
+            <li><%= link_to t('polish'), set_language_polish_path %></li>
+          </ul>
+        <li><%= link_to t('contact'), pages_contact_path %></li>
+        <li><%= link_to t('about'), pages_about_path %></li>
     </ul>
   </div>
 </nav>

@@ -25,6 +25,10 @@ Rails.application.routes.draw do
 
   get 'pages/score'
 
+  get 'set_language/polish'
+
+  get 'set_language/english'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
