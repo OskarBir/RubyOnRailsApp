@@ -32,8 +32,8 @@ This repo contains Ruby on Rails project that lets users learn polish/english wo
 
 ##### Admin:
 
-* can do eveything users can
-* has acces to all of the CRUDs (Administration Panel)
+* can do everything users can
+* has access to all of the CRUDs (Administration Panel)
 
 # Polski
 
@@ -42,19 +42,19 @@ Wdrożone za pomocą heroku.
 Możesz zobaczyć aplikację [TUTAJ](https://systemnaukislowek.herokuapp.com)
 
 ## System Nauki Słówek
-To repo zawiera projekt Ruby On Rails, który pozwala użytkownikom uczuć sie słówek po polsku/angielsku
+To repo zawiera projekt Ruby On Rails, który pozwala użytkownikom uczuć się słówek po polsku/angielsku
 
 ### Zawartość:
 
-* Uzytkownik wybiera kategorię, podkategorię, a nasptępnie zestaw słówek z którego chce się uczyć
+* Użytkownik wybiera kategorię, podkategorię, a następnie zestaw słówek z którego chce się uczyć
 * Są dwa typy sprawdzania wiedzy: Test oraz Egzamin
-* Użytkownik może wybrać czy chce uczyc sie z polskiego na angielski czy vice-versa
-* Uzytkownik może wybrać język w którym będzie wyświetlała sie strona pomiędzy Polskim, a Angielskiem
+* Użytkownik może wybrać czy chce uczyć się z polskiego na angielski czy vice-versa
+* Uzytkownik może wybrać język w którym będzie wyświetlała się strona pomiędzy Polskim, a Angielskiem
               
 ### Użytkownicy:
 
 ##### Niezalogowani użytkownicy mogą:
-* Wykonać test na zestawie słówek bez zapisaywania wyniku
+* Wykonać test na zestawie słówek bez zapisywania wyniku
 * Zarejestrować się
 
 ##### Zalogowany użytkownik może:
@@ -66,5 +66,5 @@ To repo zawiera projekt Ruby On Rails, który pozwala użytkownikom uczuć sie s
 
 ### Admin:
 
-* może wszystko co mogą użytkownicy
-* ma dostęp do wszystkich CRUDów (Panel Administacyjny)
+* może wszystko to, co mogą użytkownicy
+* ma dostęp do wszystkich CRUDów (Panel Administracyjny)
