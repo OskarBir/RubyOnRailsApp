@@ -67,8 +67,4 @@ To repo zawiera projekt Ruby On Rails, który pozwala użytkownikom uczuć się 
 ### Admin:
 
 * może wszystko to, co mogą użytkownicy
-<<<<<<< HEAD
 * ma dostęp do wszystkich CRUDów (Panel Administracyjny)
-=======
-* ma dostęp do wszystkich CRUDów (Panel Administracyjny)
->>>>>>> a8598048bcb70f791a995a5cabdb5c4d2d58eaef
