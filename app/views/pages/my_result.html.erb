@@ -15,7 +15,7 @@
   <% @results.each do |result| %>
     <tr>
       <td><%= result.result %></td>
-      <td><%= @word %></td>
+      <td><%= Word.find(result.word_id).name %></td>
       <td><%= result.created_at %></td>
     </tr>
   <% end %>

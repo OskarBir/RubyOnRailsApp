@@ -31,12 +31,6 @@ class PagesController < ApplicationController
   end
 
   def algorithm
-    if params[:lang].to_i == 1
-      @lang = " in english is:"
-    else
-      params[:lang].to_i == 0
-      @lang = " w języku polskim to:"
-    end
     words = Word.find(params[:id]).content.split(';')
     @words_hash = words_hash(words)
   end
@@ -58,9 +52,6 @@ class PagesController < ApplicationController
 
   def my_result
     @results = Result.where(user_id: current_user)
-    @results.each do |result|
-      @word = Word.find(result.word_id).name
-    end
   end
 
   private
