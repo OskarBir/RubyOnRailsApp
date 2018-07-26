@@ -25,6 +25,8 @@ Rails.application.routes.draw do
 
   get 'pages/score'
 
+  get 'pages/my_result'
+
   get 'set_language/polish'
 
   get 'set_language/english'

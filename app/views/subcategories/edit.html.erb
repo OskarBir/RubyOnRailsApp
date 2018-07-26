@@ -1,6 +1,6 @@
-<h1>Editing Subcategory</h1>
+<h1><%= t('admin.subcategory') %></h1>
 
 <%= render 'form' %>
 <br/>
-<%= link_to 'Show', @subcategory, class: 'btn btn-warning' %>
-<%= link_to 'Back', subcategories_path, class: 'btn btn-danger' %>
+<%= link_to t('admin.show'), @subcategory, class: 'btn btn-warning' %>
+<%= link_to t('admin.back'), subcategories_path, class: 'btn btn-danger' %>

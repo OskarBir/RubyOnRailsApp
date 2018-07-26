@@ -1,5 +1,10 @@
 en:
   devise:
+    edit:
+      leave_blank: "Leave it blank if you don't want to change it"
+      delete_account: "Delete my account"
+      you_sure: "Are you sure?"
+      confirm: "Confirm"
     log_in:
       log_in: "Log in"
       email: "Email"

@@ -11,6 +11,18 @@ pl:
       email: "Email"
       password: "Hasło"
       password_confirmation: "Potwierdź Hasło"
+    edit:
+      username: "Nazwa Użytkownika"
+      first_name: "Imię"
+      last_name: "Nazwisko"
+      email: "Email"
+      password: "Hasło"
+      password_confirmation: "Potwierdź Hasło"
+      password_current: "Wprowadź aktualne hasło w celu potwierdzenia edycji"
+      leave_blank: "Pozostaw to pole puste jeśli nie chcesz zmieniać hasła"
+      delete_account: "Usuń moje konto"
+      you_sure: "Jesteś pewnien?"
+      confirm: "Potwierdź"
     links:
       forgot_password: "Zapomniałeś swojego hasła?"
     confirmations:

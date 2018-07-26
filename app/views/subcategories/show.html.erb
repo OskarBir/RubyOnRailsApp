@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= t('admin.name') %>:</strong>
   <%= @subcategory.name %>
 </p>
 
 <p>
-  <strong>Category:</strong>
-  <%=  Category.find(@subcategory.category_id).name %>
+  <strong><%= t('admin.category') %>:</strong>
+  <%=  @category_name %>
 </p>
 
-<%= link_to 'Edit', edit_subcategory_path(@subcategory), class: 'btn btn-warning' %>
-<%= link_to 'Back', subcategories_path, class: 'btn btn-danger' %>
+<%= link_to t('admin.edit'), edit_subcategory_path(@subcategory), class: 'btn btn-warning' %>
+<%= link_to t('admin.back'), subcategories_path, class: 'btn btn-danger' %>

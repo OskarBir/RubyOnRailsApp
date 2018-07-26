@@ -5,11 +5,15 @@ class WordsController < ApplicationController
   # GET /words.json
   def index
     @words = Word.all
+    @words.each do |word|
+      @subcategory_name = Subcategory.find(word.subcategory_id).name
+    end
   end
 
   # GET /words/1
   # GET /words/1.json
   def show
+    @subcategory_name = Subcategory.find(@word.subcategory_id).name
   end
 
   # GET /words/new

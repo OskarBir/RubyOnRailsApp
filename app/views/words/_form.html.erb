@@ -3,9 +3,9 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :content %>
-    <strong>Subcategory: </strong><br>
+    <%= f.input :name, label: t('admin.name') %>
+    <%= f.input :content, label: t('admin.content'),hint: "Format: pl1;en1;pl2;en2;..." %>
+    <strong><%=t('admin.subcategory') %>:</strong><br>
     <%= f.collection_select :subcategory_id, Subcategory.order(:name),:id,:name, {}, {:class=>'form-control'} %>
     <br/>
   </div>

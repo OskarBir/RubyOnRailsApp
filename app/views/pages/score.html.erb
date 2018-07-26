@@ -1,2 +1,9 @@
-<h1><%= t('score') %></h1>
-<%= @score.to_s + "%" %>
+<h1 style="text-align:center;"><%= t('score') + " #{@score.to_s}" + " %"%></h1>
+<br/>
+<div class="center">
+  <br/>
+  <%= link_to t('return_to_category'), root_path, class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;' %><br/>
+  <br/>
+  <%= link_to t('my_results'), pages_my_result_path, class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;' %><br/>
+</div>
+

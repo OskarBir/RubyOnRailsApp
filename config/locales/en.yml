@@ -7,21 +7,67 @@ en:
   sign_in: "Sign In"
   sign_up: "Sign Up"
   log_out: "Log Out"
-  profile_edit: "Edit My Profile"
+  profile_edit: "Edit my profile"
   exam: "Exam"
   enter: "Enter "
   in_english: " in English"
   in_polish: " in Polish"
   submit: "Submit"
   score: "Your score is:"
+  my_results: "My results"
+  return_to_category: "Return to category choice"
+  user_edit: "Edit User"
+  category_edit: "Edit Category"
+  subcategory_edit: "Edit Subcategory"
+  result_edit: "Edit Result"
+  word_edit: "Edit Word"
+  word_list: "Here's list of words in this set:"
+  word_info: "Warning! Test mode doesn't save results, it's made for learning. To be able to save your results you have to be logged in and choose Exam mode."
+  algorithm_fill: "Fill in the following fields: "
   admin:
     category: "Category"
     subcategory: "Subcategory"
     result: "Result"
     word: "Word"
+    result_date: "Result date and time"
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+    name: "Name"
+    created_at: "Created at"
+    updated_at: "Updated at"
+    action: "Action"
+    new_category: "New Category"
+    new_subcategory: "New Subcategory"
+    new_result: "New Result"
+    new_word: "New Word"
+    user: "User"
+    back: "Back"
+    content: "Content"
+    panel: "Administration panel"
   choose:
     category: "Choose a category"
     subcategory: "Choose a subcategory"
     set: "Choose a set of words"
     word: "You picked "
     language: "Choose language"
+  about_page: "<h2>Word Learning System</h2>
+              <h4>This website contains Ruby on Rails project that lets users learn polish/english words.</h4>
+              <h2>Content</h2>
+              <li>User picks a category, subcategory and then set of words to learn from.</li>
+              <li>There are two types of knowledge checking: Test and Exam</li>
+              <li>User can choose if he wants to learn from polish to english or vice-versa</li>
+              <li>User can pick a Language the website is displayed in between Polish and English</li>
+              <h2>Users</h2>
+              <h4>Not logged in user can:</h4>
+              <li>Perform a test on a set of words without saving the result</li>
+              <li>Register</li>
+              <h4>Logged in user can:</h4>
+              <li>Perform a test without saving the result</li>
+              <li>Perform an exam to save the result</li>
+              <li>See all of his previous results</li>
+              <li>Edit his profile</li>
+              <li>Log out :) </li>
+              <h4>Admin:</h4>
+              <li>Can do everything users can</li>
+              <li>Has access to all of the CRUDs (Administration Panel)</li>"

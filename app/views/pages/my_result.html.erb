@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1 style="text-align:center;"><%= t('my_results') %></h1>
+
+<table class = "table table-hover">
+  <thead>
+  <tr>
+    <th><%= t('admin.result') + " [%]" %></th>
+    <th><%= t('admin.word') %></th>
+    <th><%= t('admin.result_date') %></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @results.each do |result| %>
+    <tr>
+      <td><%= result.result  %></td>
+      <td><%= @word %></td>
+      <td><%= result.created_at%></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

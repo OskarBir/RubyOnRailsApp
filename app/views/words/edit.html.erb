@@ -1,6 +1,6 @@
-<h1>Editing Word</h1>
+<h1><%= t('word_edit') %></h1>
 
 <%= render 'form' %>
 <br/>
-<%= link_to 'Show', @word, class: 'btn btn-warning' %>
-<%= link_to 'Back', words_path, class: 'btn btn-danger' %>
+<%= link_to t('admin.show'), @word, class: 'btn btn-warning' %>
+<%= link_to t('admin.back'), words_path, class: 'btn btn-danger' %>

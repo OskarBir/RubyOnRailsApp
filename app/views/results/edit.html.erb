@@ -1,7 +1,7 @@
-<h1>Editing Result</h1>
+<h1><%= t('admin.result') %></h1>
 
 <%= render 'form' %>
 <br/>
 
-<%= link_to 'Show', @result, class: 'btn btn-warning' %>
-<%= link_to 'Back', results_path, class: 'btn btn-danger' %>
+<%= link_to t('admin.show'), @result, class: 'btn btn-warning' %>
+<%= link_to t('admin.back'), results_path, class: 'btn btn-danger' %>

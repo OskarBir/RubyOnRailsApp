@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Result:</strong>
+  <strong><%= t('admin.result') %>:</strong>
   <%= @result.result %>
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= User.find(@result.user_id).inspect %>
+  <strong><%= t('admin.user') %>:</strong>
+  <%= @user.inspect%>
 </p>
 
 <p>
-  <strong>Word:</strong>
-  <%= Word.find(@result.word_id).inspect %>
+  <strong><%= t('admin.word') %>:</strong>
+  <%= @word.inspect %>
 </p>
 
-<%= link_to 'Edit', edit_result_path(@result), class: 'btn btn-warning' %>
-<%= link_to 'Back', results_path, class: 'btn btn-danger' %>
+<%= link_to t('admin.edit'), edit_result_path(@result), class: 'btn btn-warning' %>
+<%= link_to t('admin.back'), results_path, class: 'btn btn-danger' %>

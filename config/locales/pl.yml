@@ -183,9 +183,9 @@ pl:
     select:
       prompt: Proszę wybrać
     submit:
-      create: Utwórz %{model}
-      submit: Zapisz %{model}
-      update: Aktualizuj %{model}
+      create: Utwórz
+      submit: Zapisz
+      update: Aktualizuj
   number:
     currency:
       format:
@@ -256,21 +256,67 @@ pl:
   sign_in: "Zaloguj się"
   sign_up: "Zarejestruj się"
   log_out: "Wyloguj"
-  profile_edit: "Edytuj Mój Profil"
+  profile_edit: "Edytuj mój profil"
   exam: "Egzamin"
   enter: "Wpisz "
   in_english: " po angielsku"
   in_polish: " po polsku"
   submit: "Potwierdź"
   score: "Twój wynik to:"
+  my_results: "Moje wyniki"
+  return_to_category: "Wróć do wyboru kategorii"
+  user_edit: "Edytuj użytkownika"
+  category_edit: "Edytuj kategorie"
+  subcategory_edit: "Edytuj podkategorie"
+  result_edit: "Edytuj wynik"
+  word_edit: "Edytuj słówka"
+  word_list: "Oto lista słówek w danym zestawie:"
+  word_info: "Uwaga! Tryb Test nie zapisuje wyników, służy do nauki. Aby zapisać wynik należy być zalagowanym użytkownikiem i wybrać opcję Egzamin."
+  algorithm_fill: "Uzupełnij poniższe pola: "
   admin:
     category: "Kategoria"
     subcategory: "Podkategoria"
     result: "Wynik"
     word: "Słówka"
+    result_date: "Data i czas wyniku"
+    show: "Pokaż"
+    edit: "Edytuj"
+    delete: "Usuń"
+    name: "Nazwa"
+    created_at: "Utworzono"
+    updated_at: "Zaktualizowano"
+    action: "Akcja"
+    new_category: "Nowa Kategoria"
+    new_subcategory: "Nowa Podkategoria"
+    new_result: "Nowy Wynik"
+    new_word: "Nowe Słówka"
+    user: "Użytkownik"
+    back: "Cofnij"
+    content: "Zawartość"
+    panel: "Panel Administracyjny"
   choose:
     category: "Wybierz kategorię"
     subcategory: "Wybierz podkategorię"
     set: "Wybierz zestaw słówek"
     word: "Wybrałeś "
     language: "Wybierz język"
+  about_page: "<h2>System Nauki Słówek</h2>
+              <h4>Ta strona zawiera projekt Ruby On Rails, który pozwala użytkownikom uczuć sie słówek po polsku/angielsku</h4>
+              <h2>Zawartość</h2>
+              <li>Użytkownik wybiera kategorię, podkategorię, a następnie zestaw słówek z którego chce się uczyć</li>
+              <li>Są dwa typy sprawdzania wiedzy: Test oraz Egzamin</li>
+              <li>Użytkownik może wybrać czy chce uczyć się z polskiego na angielski czy vice-versa</li>
+              <li>Użytkownik może wybrać język w którym będzie wyświetlała się strona pomiędzy Polskim, a Angielskiem </li>
+              <h2>Użytkownicy</h2>
+              <h4>Niezalogowani użytkownicy mogą:</h4>
+              <li>Wykonać test na zestawie słówek bez zapisywania wyniku</li>
+              <li>Zarejestrować się</li>
+              <h4>Zalogowany użytkownik może:</h4>
+              <li>Wykonać test bez zapisywania wyniku</li>
+              <li>Wykonać egzamin by wynik został zapisany</li>
+              <li>Zobaczyć wszystkie poprzednie wyniki</li>
+              <li>Edytować swój profil</li>
+              <li>Wylogować się :) </li>
+              <h4>Admin:</h4>
+              <li>może wszystko to, co mogą użytkownicy</li>
+              <li>ma dostęp do wszystkich CRUDów (Panel Administracyjny)</li>"

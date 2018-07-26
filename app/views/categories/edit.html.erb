@@ -1,6 +1,6 @@
-<h1>Editing Category</h1>
+<h1><%= t('category_edit') %></h1>
 
 <%= render 'form' %>
 <br/>
-<%= link_to 'Show', @category, class: 'btn btn-warning' %>
-<%= link_to 'Back', categories_path, class: 'btn btn-danger' %>
+<%= link_to t('admin.show'), @category, class: 'btn btn-warning' %>
+<%= link_to t('admin.back'), categories_path, class: 'btn btn-danger' %>

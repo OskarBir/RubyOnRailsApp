@@ -1,7 +1,8 @@
 <% @words.each do |set| %>
   <div class="center">
-    <h1 style="text-align:center;" ><%= t('choose.word') + set.name%></h1>
-    <table class = "table table-hover">
+    <h1 style="text-align:center;"><%= t('choose.word') + set.name %></h1>
+    <h2><%= t('word_list') %></h2>
+    <table class="table table-hover">
       <thead>
       <tr>
         <th><%= t('polish') %></th>
@@ -10,20 +11,25 @@
       </thead>
 
       <tbody>
-      <% i=0%>
+      <% i = 0 %>
       <% while i < @words_hash.keys.length do %>
         <tr>
-          <td><%= @words_hash.keys[0+i] %></td>
-          <td><%= @words_hash.values[0+i] %></td>
+          <td><%= @words_hash.keys[0 + i] %></td>
+          <td><%= @words_hash.values[0 + i] %></td>
         <tr>
           <% i += 1 %>
       <% end %>
       </tbody>
     </table>
-
-    <%= link_to "Test", pages_test_path(id: set.id), class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;'%><br/>
     <br/>
-    <%= link_to t('exam'), pages_exam_path(id: set.id), class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;'%>
+    <h3><%= t('word_info') %></h3>
+
+    <%= link_to "Test", pages_test_path(id: set.id), class: 'btn btn-warning button_font', style: 'width:550px; height: 70px;' %>
+    <br/>
+    <br/>
+    <% if current_user %>
+      <%= link_to t('exam'), pages_exam_path(id: set.id), class: 'btn btn-warning button_font', style: 'width:550px; height: 70px;' %>
+    <% end %>
   </div>
 <% end %>
 

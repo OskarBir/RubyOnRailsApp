@@ -1,20 +1,20 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong><%= t('admin.name') %>:</strong>
   <%= @word.name %>
 </p>
 
 <p>
-  <strong>Words:</strong>
+  <strong><%= t('admin.word') %>:</strong>
   <%= @word.content %>
 </p>
 
 
 <p>
-  <strong>Subcategory:</strong>
-  <%= Subcategory.find(@word.subcategory_id).name%>
+  <strong><%= t('admin.subcategory') %>:</strong>
+  <%= @subcategory_name %>
 </p>
 
-<%= link_to 'Edit', edit_word_path(@word), class: 'btn btn-warning' %>
-<%= link_to 'Back', words_path, class: 'btn btn-danger' %>
+<%= link_to t('admin.edit'), edit_word_path(@word), class: 'btn btn-warning' %>
+<%= link_to t('admin.back'), words_path, class: 'btn btn-danger' %>
