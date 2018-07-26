@@ -5,15 +5,11 @@ class SubcategoriesController < ApplicationController
   # GET /subcategories.json
   def index
     @subcategories = Subcategory.all
-    @subcategories.each do |subcategory|
-      @category_name = Category.find(subcategory.category_id).name
-    end
   end
 
   # GET /subcategories/1
   # GET /subcategories/1.json
   def show
-    @category_name = Category.find(@subcategory.category_id).name
   end
 
   # GET /subcategories/new

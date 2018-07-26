@@ -6,7 +6,7 @@
   <div class="form-inputs">
     <%= f.input :username, required: true, autofocus: true, label: t('devise.sign_up.username') %>
     <%= f.input :email, required: true, label: t('devise.sign_up.email') %>
-    <%= f.input :password, required: true, label: t('devise.sign_up.password'), hint: ("#{@minimum_password_length} " + t('simple_form.error_notification.minimum_characters')  if @minimum_password_length) %>
+    <%= f.input :password, required: true, label: t('devise.sign_up.password'), hint: ("#{@minimum_password_length} " + t('simple_form.error_notification.minimum_characters') if @minimum_password_length) %>
     <%= f.input :password_confirmation, required: true, label: t('devise.sign_up.password_confirmation') %>
   </div>
 

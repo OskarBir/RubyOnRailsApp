@@ -2,29 +2,29 @@
 
 <h1><%= t('admin.word') %></h1>
 
-<table class = "table table-hover">
+<table class="table table-hover">
   <thead>
-    <tr>
-      <th><%= t('admin.name') %></th>
-      <th><%= t('admin.subcategory') %></th>
-      <th><%= t('admin.created_at') %></th>
-      <th><%= t('admin.updated_at') %></th>
-      <th colspan='3' style='width: 15%; text-align: center;'><%= t('admin.action') %></th>
-    </tr>
+  <tr>
+    <th><%= t('admin.name') %></th>
+    <th><%= t('admin.subcategory') %></th>
+    <th><%= t('admin.created_at') %></th>
+    <th><%= t('admin.updated_at') %></th>
+    <th colspan='3' style='width: 15%; text-align: center;'><%= t('admin.action') %></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @words.each do |word| %>
-      <tr>
-        <td><%= word.name %></td>
-        <td><%= @subcategory_name %></td>
-        <td><%= word.created_at%></td>
-        <td><%= word.updated_at %></td>
-        <td><%= link_to t('admin.show'), word, class: 'btn btn-default' %></td>
-        <td><%= link_to t('admin.edit'), edit_word_path(word), class: 'btn btn-default' %></td>
-        <td><%= link_to t('admin.delete'), word, method: :delete, class: 'btn btn-default', data: { confirm: t('devise.edit.you_sure') } %></td>
-      </tr>
-    <% end %>
+  <% @words.each do |word| %>
+    <tr>
+      <td><%= word.name %></td>
+      <td><%= Subcategory.find(word.subcategory_id).name %></td>
+      <td><%= word.created_at %></td>
+      <td><%= word.updated_at %></td>
+      <td><%= link_to t('admin.show'), word, class: 'btn btn-default' %></td>
+      <td><%= link_to t('admin.edit'), edit_word_path(word), class: 'btn btn-default' %></td>
+      <td><%= link_to t('admin.delete'), word, method: :delete, class: 'btn btn-default', data: {confirm: t('devise.edit.you_sure')} %></td>
+    </tr>
+  <% end %>
   </tbody>
 </table>
 

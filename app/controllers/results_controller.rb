@@ -5,17 +5,11 @@ class ResultsController < ApplicationController
   # GET /results.json
   def index
     @results = Result.all
-    @results.each do |result|
-      @username = User.find(result.user_id).username
-      @wordname = Word.find(result.word_id).name
-    end
   end
 
   # GET /results/1
   # GET /results/1.json
   def show
-    @user = User.find(@result.user_id)
-    @word = Word.find(@result.word_id)
   end
 
   # GET /results/new

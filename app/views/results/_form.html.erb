@@ -1,13 +1,12 @@
-
 <%= simple_form_for(@result) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
     <%= f.input :result, label: t('admin.result') %>
     <strong><%= t('admin.user') %></strong>
-    <%= f.collection_select :user_id, User.order(:username),:id,:username, {}, {:class=>'form-control'} %><br/>
+    <%= f.collection_select :user_id, User.order(:username), :id, :username, {}, {:class => 'form-control'} %><br/>
     <strong><%= t('admin.word') %></strong>
-    <%= f.collection_select :word_id, Word.order(:name),:id,:name, {}, {:class=>'form-control'} %><br/>
+    <%= f.collection_select :word_id, Word.order(:name), :id, :name, {}, {:class => 'form-control'} %><br/>
   </div>
 
   <div class="form-actions">

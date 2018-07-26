@@ -1,10 +1,10 @@
-<h1 style="text-align:center;"><%= t('choose.category')%></h1>
+<h1 style="text-align:center;"><%= t('choose.category') %></h1>
 <div class="center">
-<% @categories.each do |category| %>
-  <br/>
-  <%= link_to "#{category.name}", pages_subcategory_list_path(id: category.id), class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;'%>
-  <br/>
-<% end %>
+  <% @categories.each do |category| %>
+    <br/>
+    <%= link_to "#{category.name}", pages_subcategory_list_path(id: category.id), class: 'btn btn-warning button_font', style: 'width:550px; height: 70px;' %>
+    <br/>
+  <% end %>
 </div>
 
 

@@ -1,9 +1,9 @@
 <h1 style="text-align:center;"><%= t('choose.set') %></h1>
 
 <div class="center">
-<% @words.each do |word| %>
-  <br/>
-  <%= link_to "#{word.name}", pages_word_path(id: word.id), class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;'%>
-  <br/>
-<% end %>
+  <% @words.each do |word| %>
+    <br/>
+    <%= link_to "#{word.name}", pages_word_path(id: word.id), class: 'btn btn-warning button_font', style: 'width:550px; height: 70px;' %>
+    <br/>
+  <% end %>
 </div>

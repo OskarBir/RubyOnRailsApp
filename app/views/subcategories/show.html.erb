@@ -7,7 +7,7 @@
 
 <p>
   <strong><%= t('admin.category') %>:</strong>
-  <%=  @category_name %>
+  <%=  Category.find(@subcategory.category_id).name %>
 </p>
 
 <%= link_to t('admin.edit'), edit_subcategory_path(@subcategory), class: 'btn btn-warning' %>

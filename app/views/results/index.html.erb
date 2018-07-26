@@ -2,31 +2,31 @@
 
 <h1><%= t('admin.result') %></h1>
 
-<table class = "table table-hover">
+<table class="table table-hover">
   <thead>
-    <tr>
-      <th><%= t('admin.result') %></th>
-      <th><%= t('admin.user') %></th>
-      <th><%= t('admin.word') %></th>
-      <th><%= t('admin.created_at') %></th>
-      <th><%= t('admin.updated_at') %></th>
-      <th colspan='3' style='width: 15%; text-align: center;'><%= t('admin.action') %></th>
-    </tr>
+  <tr>
+    <th><%= t('admin.result') %></th>
+    <th><%= t('admin.user') %></th>
+    <th><%= t('admin.word') %></th>
+    <th><%= t('admin.created_at') %></th>
+    <th><%= t('admin.updated_at') %></th>
+    <th colspan='3' style='width: 15%; text-align: center;'><%= t('admin.action') %></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @results.each do |result| %>
-      <tr>
-        <td><%= result.result %></td>
-        <td><%= @username %></td>
-        <td><%= @wordname %></td>
-        <td><%= result.created_at%></td>
-        <td><%= result.updated_at %></td>
-        <td><%= link_to t('admin.show'), result, class: 'btn btn-default' %></td>
-        <td><%= link_to t('admin.edit'), edit_result_path(result), class: 'btn btn-default' %></td>
-        <td><%= link_to t('admin.delete'), result, class: 'btn btn-default', method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+  <% @results.each do |result| %>
+    <tr>
+      <td><%= result.result %></td>
+      <td><%= User.find(result.user_id).username %></td>
+      <td><%= Word.find(result.word_id).name %></td>
+      <td><%= result.created_at %></td>
+      <td><%= result.updated_at %></td>
+      <td><%= link_to t('admin.show'), result, class: 'btn btn-default' %></td>
+      <td><%= link_to t('admin.edit'), edit_result_path(result), class: 'btn btn-default' %></td>
+      <td><%= link_to t('admin.delete'), result, class: 'btn btn-default', method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
   </tbody>
 </table>
 

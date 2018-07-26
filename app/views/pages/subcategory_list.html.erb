@@ -1,8 +1,8 @@
 <h1 style="text-align:center;"><%= t('choose.subcategory') %></h1>
 <div class="center">
-<% @subcategories.each do |subcategory| %>
-  <br/>
-  <%= link_to "#{subcategory.name}", pages_word_list_path(id: subcategory.id), class: 'btn btn-warning button_font',style: 'width:550px; height: 70px;'%>
-  <br/>
-<% end %>
+  <% @subcategories.each do |subcategory| %>
+    <br/>
+    <%= link_to "#{subcategory.name}", pages_word_list_path(id: subcategory.id), class: 'btn btn-warning button_font', style: 'width:550px; height: 70px;' %>
+    <br/>
+  <% end %>
 </div>

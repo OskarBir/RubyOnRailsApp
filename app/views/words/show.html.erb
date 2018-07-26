@@ -13,7 +13,7 @@
 
 <p>
   <strong><%= t('admin.subcategory') %>:</strong>
-  <%= @subcategory_name %>
+  <%= Subcategory.find(@word.subcategory_id).name%>
 </p>
 
 <%= link_to t('admin.edit'), edit_word_path(@word), class: 'btn btn-warning' %>

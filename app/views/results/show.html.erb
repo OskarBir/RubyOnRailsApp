@@ -7,12 +7,12 @@
 
 <p>
   <strong><%= t('admin.user') %>:</strong>
-  <%= @user.inspect%>
+  <%= User.find(@result.user_id).inspect %>
 </p>
 
 <p>
   <strong><%= t('admin.word') %>:</strong>
-  <%= @word.inspect %>
+  <%= Word.find(@result.word_id).inspect %>
 </p>
 
 <%= link_to t('admin.edit'), edit_result_path(@result), class: 'btn btn-warning' %>
