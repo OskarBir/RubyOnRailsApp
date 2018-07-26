@@ -1,4 +1,4 @@
-#English
+# English
 
 Deployed with [HEROKU](https://systemnaukislowek.herokuapp.com)
 
@@ -33,7 +33,7 @@ This repo contains Ruby on Rails project that lets users learn polish/english wo
 * can do eveything users can
 * has acces to all of the CRUDs (Administration Panel)
 
-#Polski
+# Polski
 
 Wdrożone za pomocą [HEROKU](https://systemnaukislowek.herokuapp.com)
 
