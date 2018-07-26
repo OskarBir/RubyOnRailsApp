@@ -1,6 +1,8 @@
 # English
 
-Deployed with [HEROKU](https://systemnaukislowek.herokuapp.com)
+Deployed with heroku.
+
+You can see the app [HERE](https://systemnaukislowek.herokuapp.com)
 
 ## Word Learning System
 
@@ -35,7 +37,9 @@ This repo contains Ruby on Rails project that lets users learn polish/english wo
 
 # Polski
 
-Wdrożone za pomocą [HEROKU](https://systemnaukislowek.herokuapp.com)
+Wdrożone za pomocą heroku.
+
+Możesz zobaczyć aplikację [TUTAJ](https://systemnaukislowek.herokuapp.com)
 
 ## System Nauki Słówek
 To repo zawiera projekt Ruby On Rails, który pozwala użytkownikom uczuć sie słówek po polsku/angielsku
